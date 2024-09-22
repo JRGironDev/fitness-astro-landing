@@ -1,0 +1,27 @@
+---
+interface Props {
+  callToAction: string;
+  buttonText: string;
+  companyName: string;
+  //    logoImage: string;
+}
+const { callToAction, buttonText, companyName } = Astro.props;
+---
+
+<header
+  class="bg-cover bg-no-repeat bg-[url('/images/gym-hero-fitness-image.jpg')] bg-gray-400 bg-blend-multiply"
+>
+  <nav class="text-white uppercase pt-8 p-4 font-bold">
+    <ul>
+      <li>{companyName}</li>
+    </ul>
+  </nav>
+  <div class="px-4 py-56 mx-auto max-w-screen text-white text-center uppercase">
+    <h1 class="font-extrabold text-9xl tracking-wider mb-4">
+      {callToAction}
+    </h1>
+    <button class="bg-secondary text-black font-bold py-2 px-6 rounded-md"
+      >{buttonText}</button
+    >
+  </div>
+</header>
