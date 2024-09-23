@@ -4,8 +4,14 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'secondary': "#F9EF23"
-		},
-	}},
+				'secondary': "#F9EF23",
+				'dark-gray': "#141414",
+			},
+			fontFamily: {
+				'anton': ['"Anton"', "sans-serif"],
+				'grotesk': ['"Hanken Grotesk"', "sans-serif"],
+			},
+		}
+	},
 	plugins: [],
-}
+}	

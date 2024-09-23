@@ -13,14 +13,15 @@ const { callToAction, buttonText, companyName } = Astro.props;
 >
   <nav class="text-white uppercase pt-8 p-4 font-bold">
     <ul>
-      <li>{companyName}</li>
+      <li class="font-anton">{companyName}</li>
     </ul>
   </nav>
   <div class="px-4 py-56 mx-auto max-w-screen text-white text-center uppercase">
-    <h1 class="font-extrabold text-9xl tracking-wider mb-4">
+    <h1 class="font-extrabold text-9xl mb-4 italic tracking-widest font-anton">
       {callToAction}
     </h1>
-    <button class="bg-secondary text-black font-bold py-2 px-6 rounded-md"
+    <button
+      class="bg-secondary text-black font-bold py-2 px-6 rounded-md font-grotesk"
       >{buttonText}</button
     >
   </div>
